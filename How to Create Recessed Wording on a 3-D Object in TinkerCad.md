@@ -1,9 +1,10 @@
-# How to Create Recessed Wording on a 3-D Object in TinkerCad
+# How to Create Recessed Wording on a 3D Object in TinkerCad
 ## Step One: 
 
   <img width="1850" height="876" alt="image" src="https://github.com/user-attachments/assets/c63eca34-8eb4-4bc4-bfe3-a6bcb57406c4" />
 
-  * Keep in mind: You must make the object, or the walls of the object, thick enough to show recessed wording while also allowing for enough actual print space. If your words are too shallow, or the wall is not thick enough, you will not be able to read the words on your printed project.
+  * Keep in mind: You must make the object, or the walls of the object, thick enough to show recessed wording while also allowing for enough actual print space.
+  * If your words are too shallow or the wall is not thick enough, you will not be able to read the words on your printed project.
   * Tip: When building larger objects, if you can make them hollow you will save on print time and materials.
 
 ## Step Two:
@@ -11,7 +12,7 @@
 <img width="1857" height="877" alt="image" src="https://github.com/user-attachments/assets/345c7b85-a519-415c-8aa4-ded44ddc9847" />
   
   * Click `Text` under "Basic Shapes".
-  * Align your text in the location you would like it to appear within your 3-D object.
+  * Align your text in the location you would like it to appear within your 3D object.
   * Next, alter the text appearance in the pop-up menu that appears once you drop your text onto the object.
   * Your object's text should look similar to the picture above.
 
@@ -29,7 +30,7 @@
 
   <img width="1858" height="878" alt="image" src="https://github.com/user-attachments/assets/ffb52651-e5e4-4667-9909-6749909918d2" />
 
-  * Next, right click and drag your curser over the 3-D objects that you created. Once you have highlighted both, the tool menu in the top right screen becomes available to use.
+  * Next, right click and drag your curser over the 3D objects that you created. Once you have highlighted both, the tool menu in the top right screen becomes available to use.
   * Click `Union Group`
-  * Wait for the objects to union, and then you have successfully created your 3-D object with recessed writing.
-  * Run your print to see your fabulous project come to life.
+  * Wait for the objects to union, and then you have successfully created your 3D object with recessed writing.
+  * Run your print to see if your words render correctly.
