@@ -1,3 +1,8 @@
+---
+layout: default
+title: End-User Documentation on 3D Spacial Modeling and Engraving with TinkerCad
+---
+
 # End-User Documentation on 3D Spacial Modeling and Engraving with TinkerCad
 ## Step One: 
 
