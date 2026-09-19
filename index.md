@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Technical Writing Portfolio
+title: Dalanie Aufill- Homepage
 ---
 
 ## Available Documents
