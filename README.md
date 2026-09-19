@@ -6,7 +6,7 @@ I love gaining new skills and working with complex topics, so the move to techni
 
 ## Projects 
 
-  * End-User Documentation: 3D Spacial Modeling and Engraving with TinkerCad]
+  * [End-User Documentation: 3D Spacial Modeling and Engraving with TinkerCad](https://github.com/lanieaufill/Technical-Writing-Portfolio/blob/main/End-User%20Documentation%3A%203D%20Spacial%20Modeling%20and%20Engraving%20with%20TinkerCad.md)
   * Instruction Manual
   * SOP
   * Installation Guide
