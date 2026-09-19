@@ -3,7 +3,6 @@ layout: default
 title: README.md
 ---
 
-
 # Dalanie Aufill: Technical Writing Portfolio
 
 My name is Dalanie Aufill and I am an aspiring technical writer. 
