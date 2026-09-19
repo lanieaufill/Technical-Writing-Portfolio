@@ -1,6 +1,6 @@
 ---
 layout: default
-title: README.md
+title: Dalanie Aufill-Technical Writing Portfolio
 ---
 
 # Dalanie Aufill: Technical Writing Portfolio
