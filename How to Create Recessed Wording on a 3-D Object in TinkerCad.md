@@ -30,7 +30,7 @@
 
   <img width="1858" height="878" alt="image" src="https://github.com/user-attachments/assets/ffb52651-e5e4-4667-9909-6749909918d2" />
 
-  * Next, right click and drag your curser over the 3D objects that you created. Once you have highlighted both, the tool menu in the top right screen becomes available to use.
+  * Next, right click and drag your cursor over the 3D objects that you created. Once you have highlighted both, the tool menu in the top right screen becomes available to use.
   * Click `Union Group`
   * Wait for the objects to union, and then you have successfully created your 3D object with recessed text.
   * Run your print to see if your words render correctly.
