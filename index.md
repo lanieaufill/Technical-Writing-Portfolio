@@ -1,1 +1,6 @@
-index.md
+---
+layout: home
+title: Home
+---
+
+#Welcome
