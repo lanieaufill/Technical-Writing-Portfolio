@@ -31,7 +31,7 @@ title: End-User Documentation on 3D Spacial Modeling and Engraving with TinkerCa
       * Note: If you do not intersect your object with enough depth you will not render text on your print job. However, if you put the hole entirely through your object, you will be able to see through the object- it will create a hole.
  * Tip: If you are moving your object within the vertical plane, you can hold `ctrl + ↑/↓`. This allows you to move the object up and down without altering the horizontal location.
 
-  ## Step Four: 
+## Step Four: 
 
   <img width="1858" height="878" alt="image" src="https://github.com/user-attachments/assets/ffb52651-e5e4-4667-9909-6749909918d2" />
 
