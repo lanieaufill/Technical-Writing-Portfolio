@@ -1,3 +1,9 @@
+---
+layout: default
+title: README
+---
+
+
 # Dalanie Aufill: Technical Writing Portfolio
 
 My name is Dalanie Aufill and I am an aspiring technical writer. 
