@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Home
+title: Technical Writing Portfolio
 ---
 
 # Available Documents
-  *[About Me](https://github.com/lanieaufill/Technical-Writing-Portfolio/blob/main/README.md)
+  *[About Me]
