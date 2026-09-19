@@ -6,7 +6,7 @@ I love gaining new skills and working with complex topics, so the move to techni
 
 ## Projects 
 
-  * How-To Guide: Tinkercad
+  * [How-To Guide: Tinkercad](https://github.com/lanieaufill/Technical-Writing-Portfolio/blob/main/How%20to%20Create%20Recessed%20Wording%20on%20a%203-D%20Object%20in%20TinkerCad.md)
   * Instruction Manual
   * SOP
   * Installation Guide
