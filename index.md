@@ -7,4 +7,5 @@ title: Technical Writing Portfolio
 Check out my [About Me](/README.md)
 
 ##Portfolio Documents
-*[End-User Documentation on 3D Spacial Modeling and Engraving with TinkerCad](/tinkercad-documentation.md)
+
+* [End-User Documentation on 3D Spacial Modeling and Engraving with TinkerCad](/tinkercad-documentation.md)
