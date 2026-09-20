@@ -29,7 +29,7 @@
     * Add your printer specifications under both the `Printer` tab and the `Extruder` tab
       * Printer Tab- input the exact X,Y, and Z planes of your printer bed.
       * Extruder Tab- input the nozzle side, in mm, and the compatible materials dimension.
-    * If you followed this set of steps, you have successfully added your printer,and you can start printing
+    * If you followed this set of steps, you have successfully added your printer, and you can start printing
 10. Click `Update Firmware` to upgrade your printer to the most curren5 version of the firmware available. 
 11. Click `Automatically Update`.
 12. You have successfully added your Cura printer.
