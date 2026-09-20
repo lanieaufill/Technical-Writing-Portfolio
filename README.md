@@ -13,7 +13,7 @@ I love gaining new skills and working with complex topics, so the move to techni
 
   * [End-User Documentation on 3D Spacial Modeling and Engraving with TinkerCad](/tinkercad-documentation.md)
   * Instruction Manual
-  * SOP
+  * [SOP](SOP_Laptop_Updates.md)
   * [Installation Guide](Instructions.md)
   * API Reference Guide- Endpoint Documentation: `PokeAPI` 
 
