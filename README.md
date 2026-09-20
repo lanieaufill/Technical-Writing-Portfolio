@@ -12,9 +12,9 @@ I love gaining new skills and working with complex topics, so the move to techni
 ## Projects 
 
   * [End-User Documentation on 3D Spacial Modeling and Engraving with TinkerCad](/tinkercad-documentation.md)
-  * [Instruction Manual](Instructions.md)
+  * Instruction Manual
   * SOP
-  * Installation Guide
+  * [Installation Guide](Instructions.md)
   * API Reference Guide- Endpoint Documentation: `PokeAPI` 
 
 ## Skills and Tools
