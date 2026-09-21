@@ -5,7 +5,7 @@ title: Dalanie Aufill- Homepage
 
 <style>
   body {
-    background-color: #B2AC88;
+    background-color: #C1E1C1;
   }
 </style>
 
