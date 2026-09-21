@@ -1,4 +1,9 @@
 ---
+<style>
+  body {
+    background-color: #E8F5E9;
+  }
+</style>
 layout: home
 title: Dalanie Aufill- Homepage
 ---
