@@ -1,4 +1,4 @@
-                    # Laptop Update Guide for Public Access Laptops
+# Laptop Update Guide for Public Access Laptops
 
 ### Who is this for:
 
@@ -10,7 +10,12 @@ This is to be used during monthly laptop updates. Managers will be notified of t
 
 ## Set-up Proceedure
 
-
+1. Grab your supplies box for the Laptup Updates, this should be located in your technical closet.
+  * If you do not have a supplies box set up for this, then create one with the supplies used at the end of your next laptop take-down proceedure.
+2. Once you have located your box, place it in the secure laptop update room.
+  * If you do not know where your secure laptop update room is located, ask your on-site manager.
+3. Next, gather all laptops that access the public wifi network so they can be securely updated overnight and place them in the laptop update room.
+4. 
 
 ## Take-down Proceedure
 
