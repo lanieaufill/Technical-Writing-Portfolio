@@ -22,6 +22,3 @@ This is to be used during monthly laptop updates. Managers will be notified of t
  * Note: You will likely not use all of the ethernet ports, depending on your location's number of laptops that require updating each month.
 8. Next, make sure each laptop is powered on, the wi-fi is disconnected, and the ethernet connection is functioning.
 9. Leave the laptops overnight to update automatically through the IT department. 
-
-## Take-down Proceedure
-
