@@ -1,12 +1,13 @@
 ---
+layout: home
+title: Dalanie Aufill- Homepage
+---
+
 <style>
   body {
     background-color: #E8F5E9;
   }
 </style>
-layout: home
-title: Dalanie Aufill- Homepage
----
 
 ## Available Documents
 Check out my [About Me](/README.md)
