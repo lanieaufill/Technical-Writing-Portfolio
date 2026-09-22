@@ -1,3 +1,9 @@
+<style>
+  body {
+    background-color: #D9F3E6;
+  }
+</style>
+
 # Laptop Update Guide for Public Access Laptops
 
 ### Who is this for:
