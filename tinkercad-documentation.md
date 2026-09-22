@@ -3,6 +3,20 @@ layout: default
 title: End-User Documentation on 3D Spacial Modeling and Engraving with TinkerCad
 ---
 
+<style>
+  body {
+    background-color: #C1E1C1 !important; 
+  }
+  .container-lg, .wrapper, main, .page-content {
+    background-color: #ffffff !important;
+    padding: 40px !important;
+    border-radius: 12px !important;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05) !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+</style>
+
 # End-User Documentation on 3D Spacial Modeling and Engraving with TinkerCad
 ## Step One: 
 
