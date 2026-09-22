@@ -32,8 +32,8 @@ This is to be used during monthly laptop updates. Managers will be notified of t
 4. Set up all laptops so they are able to each connect to both a power source and an ethernet cable.
 5. Remove the **switch board** located in the supplies box and set it up so that it is connected to a power source with the **power strip** provided in your supplies box.
 6. Connect the switch board to the **ethernet port** located within the wall of the secure laptop update room.
-6. Next, connect each laptop to a power supply using the power strips and **charging cables** that are in the supplies box.
-7. Next, connect each laptop to the ethernet ports on the switch board.
+6. Connect each laptop to a power supply using the power strips and **charging cables** that are in the supplies box.
+7. Connect each laptop to the ethernet ports on the switch board.
  * ***Note***: You will likely not use all of the ethernet ports, depending on your location's number of laptops that require updating each month.
 9. Ensure each laptop is powered on, the wi-fi is **disconnected**, and the ethernet connection is functioning.
 10. Leave the laptops overnight to update automatically through the IT department. 
