@@ -30,7 +30,7 @@
 1. Connect your 3D printer to your laptop or desktop computer with the cord provided with your printer
    * This is usually a **Type 2.0 USB A** to a **Type 2.0 USB B cable**.
 3. Open the Cura LulzBot Software.
-4. Click `Preferances`
+4. Click `Preferences`
 5. Click `Configure Cura`
 6. Click `Printers`
 7. Locate your printer name and click.
@@ -43,6 +43,6 @@
       * Printer Tab- input the exact **X,Y, and Z** planes of your printer bed.
       * Extruder Tab- input the **nozzle size**, in **mm**, and the compatible materials dimension.
     * If you followed this set of steps, you have successfully added your printer, and you can start printing
-10. Click `Update Firmware` to upgrade your printer to the most curren5 version of the firmware available. 
+10. Click `Update Firmware` to upgrade your printer to the most current version of the firmware available. 
 11. Click `Automatically Update`.
 12. You have successfully added your Cura printer.
