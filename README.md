@@ -3,6 +3,12 @@ layout: default
 title: Dalanie Aufill-Technical Writing Portfolio
 ---
 
+<style>
+  body {
+    background-color: #D9F3E6;
+  }
+</style>
+
 # Dalanie Aufill: Technical Writing Portfolio
 
 My name is Dalanie Aufill and I am an aspiring technical writer. 
