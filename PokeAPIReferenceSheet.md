@@ -25,7 +25,7 @@ title: api reference sheet from open access pokeapi
 
   <div class="api-control-matrix">
     <span class="api-url-base">https://pokeapi.co</span>
-    <input type="text" id="api-query-parameter" placeholder="e.g., pokemon/charizard, type/3, ability/static">
+    <input type="text" id="api-query-parameter" placeholder="api/v2/pokemon/charizard, api/v2/type/3, api/v2/ability/static">
     <button id="api-execute-btn" onclick="runLiveApiQuery()">Send Request</button>
   </div>
 
@@ -101,7 +101,7 @@ async function runLiveApiQuery() {
     jsonOutputBlock.style.color = "#24292e";
 
   } catch (caughtError) {
-    jsonOutputBlock.textContent = "{\n  \"error\": true,\n  \"message\": \"" + caughtError.message + "\",\n  \"context\": \"Verify spelling routes match the official PokéAPI v2 syntax parameters.\"\n}";
+    jsonOutputBlock.textContent = "{\n  \"error\": true,\n  \"message\": \"" + caughtError.message + "\",\n  \"context\": \"Verify spelling routes match the official PokéAPI syntax parameters.\"\n}";
     jsonOutputBlock.style.color = "#ff4444";
   }
 }
