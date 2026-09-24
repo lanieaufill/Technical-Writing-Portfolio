@@ -45,7 +45,7 @@ function getPokemonData() {
 
   resultDiv.innerHTML = '<p style="color: #666;">Searching the Pokédex...</p>';
 
-  fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}/`)
+  fetch('https://pokeapi.co/api/v2/pokemon/' + pokeName + '/')
     .then(response => {
       if (!response.ok) {
         throw new Error('Pokémon not found. Double check the spelling!');
