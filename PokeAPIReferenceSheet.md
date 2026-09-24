@@ -24,7 +24,7 @@ title: api reference sheet from open access pokeapi
   </div>
 
   <div class="api-control-matrix">
-    <span class="api-url-base">https://pokeapi.co</span>
+    <span class="api-url-base">https://pokeapi.co/</span>
     <input type="text" id="api-query-parameter" placeholder="e.g., api/v2/pokemon/ditto, api/v2/type/3">
     <button id="api-execute-btn" onclick="runLiveApiQuery()">Send Request</button>
   </div>
