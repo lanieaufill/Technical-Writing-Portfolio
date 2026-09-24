@@ -100,7 +100,7 @@ async function runLiveApiQuery() {
     pathString = pathString.substring(1);
   }
 
-  const targetUri = "https://pokeapi.co/" + pathString;
+  const targetUri = "https://pokeapi.co/api/v2/" + pathString;
   telemetryUrl.textContent = targetUri;
   telemetryStatus.textContent = "PENDING...";
   telemetryStatus.style.color = "#cca700";
