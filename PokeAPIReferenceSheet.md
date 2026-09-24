@@ -25,7 +25,7 @@ title: api reference sheet from open access pokeapi
 
   <div class="api-control-matrix">
     <span class="api-url-base">https://pokeapi.co</span>
-    <input type="text" id="api-query-parameter" placeholder="api/v2/pokemon/charizard, api/v2/type/3, api/v2/ability/static">
+    <input type="text" id="api-query-parameter" placeholder="e.g., api/v2/pokemon/ditto, api/v2/type/3">
     <button id="api-execute-btn" onclick="runLiveApiQuery()">Send Request</button>
   </div>
 
@@ -65,9 +65,6 @@ async function runLiveApiQuery() {
 
   if (pathString.startsWith('/')) {
     pathString = pathString.substring(1);
-  }
-  if (!pathString.endsWith('/') && !pathString.includes('?')) {
-    pathString = pathString + '/';
   }
 
   const targetUri = "https://pokeapi.co" + pathString;
