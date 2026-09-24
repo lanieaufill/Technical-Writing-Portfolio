@@ -329,6 +329,25 @@ function renderPrettyView(path, data, container) {
   font-size: 12px;
   line-height: 1.5;
   white-space: pre-wrap;
-  word-break: break-all;display: block;color: #24292e;}.pretty-pokemon-card, .pretty-generic-card {font-size: 14px;}.pretty-pokemon-card h4, .pretty-generic-card h4 {margin: 0 0 10px 0;color: #0366d6;font-size: 16px;}.card-hero {text-align: center;border-bottom: 1px dashed #e1e4e8;padding-bottom: 12px;margin-bottom: 12px;}.card-hero img {width: 96px;height: 96px;background: #f6f8fa;border-radius: 50%;border: 1px solid #e1e4e8;}.type-container {margin-top: 6px;}.type-badge {display: inline-block;padding: 2px 8px;font-size: 11px;font-weight: 600;color: #ffffff;border-radius: 4px;text-transform: uppercase;background: #68a090;}.type-badge.fire { background: #f08030; }.type-badge.water { background: #6890f0; }.type-badge.grass { background: #78c850; }.type-badge.electric { background: #f8d030; }.type-badge.psychic { background: #f85888; }.type-badge.ice { background: #98d8d8; }.type-badge.dragon { background: #7038f8; }.type-badge.dark { background: #705848; }.type-badge.fairy { background: #ee99ac; }.pretty-pokemon-card h5, .pretty-generic-card h5 {margin: 12px 0 6px 0;font-size: 13px;color: #586069;border-bottom: 1px solid #f6f8fa;}.pretty-pokemon-card ul, .pretty-generic-card ul {margin: 0;padding-left: 20px;}.effect-text {background: #f6f8fa;padding: 10px;border-left: 3px solid #0366d6;font-style: italic;}.tab-hint {margin-top: 16px;font-size: 12px;color: #586069;background: #f1f8ff;padding: 8px;border-radius: 4px;}
+  word-break: break-all;display: block;color: #24292e;}
+  .pretty-pokemon-card, .pretty-generic-card {font-size: 14px;}
+  .pretty-pokemon-card h4, .pretty-generic-card h4 {margin: 0 0 10px 0;color: #0366d6;font-size: 16px;}
+  .card-hero {text-align: center;border-bottom: 1px dashed #e1e4e8;padding-bottom: 12px;margin-bottom: 12px;}
+  .card-hero img {width: 96px;height: 96px;background: #f6f8fa;border-radius: 50%;border: 1px solid #e1e4e8;}
+  .type-container {margin-top: 6px;}
+  .type-badge {display: inline-block;padding: 2px 8px;font-size: 11px;font-weight: 600;color: #ffffff;border-radius: 4px;text-transform: uppercase;background: #68a090;}
+  .type-badge.fire { background: #f08030; }
+  .type-badge.water { background: #6890f0; }
+  .type-badge.grass { background: #78c850; }
+  .type-badge.electric { background: #f8d030; }
+  .type-badge.psychic { background: #f85888; }
+  .type-badge.ice { background: #98d8d8; }
+  .type-badge.dragon { background: #7038f8; }
+  .type-badge.dark { background: #705848; }
+  .type-badge.fairy { background: #ee99ac; }
+  .pretty-pokemon-card h5, .pretty-generic-card h5 {margin: 12px 0 6px 0;font-size: 13px;color: #586069;border-bottom: 1px solid #f6f8fa;}
+  .pretty-pokemon-card ul, .pretty-generic-card ul {margin: 0;padding-left: 20px;}
+  .effect-text {background: #f6f8fa;padding: 10px;border-left: 3px solid #0366d6;font-style: italic;}
+  .tab-hint {margin-top: 16px;font-size: 12px;color: #586069;background: #f1f8ff;padding: 8px;border-radius: 4px;}
 
 ## API Reference Sheet from Open Access PokeAPI
