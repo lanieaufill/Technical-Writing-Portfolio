@@ -20,28 +20,23 @@ title: api reference sheet from open access pokeapi
 <div class="api-explorer-root">
   <div class="api-explorer-header">
     <h3>PokéAPI Live Endpoint Inspector</h3>
-    <p>Construct, execute, and evaluate live HTTP GET queries across the global REST dataset.</p>
+    <p>Construct and execute live HTTP GET queries across the global REST dataset.</p>
   </div>
+
   <div class="api-control-matrix">
-    <select id="api-endpoint-selector">
-      <option value="pokemon">/pokemon</option>
-      <option value="ability">/ability</option>
-      <option value="type">/type</option>
-      <option value="move">/move</option>
-      <option value="berry">/berry</option>
-      <option value="generation">/generation</option>
-    </select>
-    <span class="api-url-slash">/</span>
-    <input type="text" id="api-query-parameter" placeholder="id or name (e.g., charizard, static, 1)">
+    <span class="api-url-base">https://pokeapi.co</span>
+    <input type="text" id="api-query-parameter" placeholder="e.g., pokemon/charizard, type/3, ability/static">
     <button id="api-execute-btn" onclick="runLiveApiQuery()">Send Request</button>
   </div>
+
   <div class="api-telemetry-bar">
     <div class="telemetry-item">Request URL: <span id="telemetry-url">None</span></div>
     <div class="telemetry-item">HTTP Status: <span id="telemetry-status">---</span></div>
   </div>
+
   <div class="api-response-console">
     <div class="console-title-tab">RESPONSE JSON PAYLOAD</div>
-    <pre><code id="api-raw-json-output">Execute a query above to stream raw API server response data maps...</code></pre>
+    <pre><code id="api-raw-json-output">Enter an endpoint route path above to execute a live query request...</code></pre>
   </div>
 </div>
 
@@ -53,35 +48,43 @@ document.getElementById('api-query-parameter')?.addEventListener('keypress', fun
 });
 
 async function runLiveApiQuery() {
-  const endpointSelect = document.getElementById('api-endpoint-selector');
   const queryParamInput = document.getElementById('api-query-parameter');
   const jsonOutputBlock = document.getElementById('api-raw-json-output');
   const telemetryUrl = document.getElementById('telemetry-url');
   const telemetryStatus = document.getElementById('telemetry-status');
 
-  if (!endpointSelect || !queryParamInput || !jsonOutputBlock) return;
+  if (!queryParamInput || !jsonOutputBlock) return;
 
-  const endpoint = endpointSelect.value;
-  const parameter = queryParamInput.value.toLowerCase().trim();
+  let pathString = queryParamInput.value.toLowerCase().trim();
 
-  if (!parameter) {
-    jsonOutputBlock.textContent = "Error: Missing URI path parameter. Please specify a resource ID or string name.";
+  if (!pathString) {
+    jsonOutputBlock.textContent = "Error: Input path string cannot be blank.";
     jsonOutputBlock.style.color = "#ff4444";
     return;
   }
 
-  const targetUri = "https://pokeapi.co" + endpoint + "/" + parameter + "/";
+  if (pathString.startsWith('/')) {
+    pathString = pathString.substring(1);
+  }
+  if (!pathString.endsWith('/') && !pathString.includes('?')) {
+    pathString = pathString + '/';
+  }
+
+  const targetUri = "https://pokeapi.co" + pathString;
   telemetryUrl.textContent = targetUri;
   telemetryStatus.textContent = "PENDING...";
   telemetryStatus.style.color = "#cca700";
 
-  jsonOutputBlock.textContent = "Streaming stream chunk data from remote origin server...";
+  jsonOutputBlock.textContent = "Streaming raw string payload data from destination host...";
   jsonOutputBlock.style.color = "#888888";
 
   try {
     const apiResponse = await fetch(targetUri, {
       method: 'GET',
-      headers: { 'Accept': 'application/json' }
+      mode: 'cors',
+      headers: { 
+        'Accept': 'application/json'
+      }
     });
 
     telemetryStatus.textContent = apiResponse.status + " " + apiResponse.statusText;
@@ -93,11 +96,12 @@ async function runLiveApiQuery() {
 
     telemetryStatus.style.color = "#28a745";
     const completeJsonData = await apiResponse.json();
+    
     jsonOutputBlock.textContent = JSON.stringify(completeJsonData, null, 2);
     jsonOutputBlock.style.color = "#24292e";
 
   } catch (caughtError) {
-    jsonOutputBlock.textContent = "{\n  \"error\": true,\n  \"message\": \"" + caughtError.message + "\",\n  \"context\": \"Ensure spelling accuracy or API endpoint availability.\"\n}";
+    jsonOutputBlock.textContent = "{\n  \"error\": true,\n  \"message\": \"" + caughtError.message + "\",\n  \"context\": \"Verify spelling routes match the official PokéAPI v2 syntax parameters.\"\n}";
     jsonOutputBlock.style.color = "#ff4444";
   }
 }
@@ -126,25 +130,21 @@ async function runLiveApiQuery() {
 .api-control-matrix {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   background: #ffffff;
   padding: 8px;
   border: 1px solid #e1e4e8;
   border-radius: 6px;
 }
-#api-endpoint-selector {
-  padding: 6px 10px;
+.api-url-base {
+  font-family: monospace;
   font-size: 14px;
-  font-family: monospace;
-  background-color: #f1f1f1;
-  border: 1px solid #d1d5da;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.api-url-slash {
-  font-family: monospace;
-  font-weight: bold;
   color: #586069;
+  user-select: none;
+  background-color: #f1f1f1;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #d1d5da;
 }
 #api-query-parameter {
   flex-grow: 1;
@@ -167,6 +167,7 @@ async function runLiveApiQuery() {
   border: 1px solid rgba(27,31,35,0.15);
   border-radius: 4px;
   cursor: pointer;
+  white-space: nowrap;
 }
 #api-execute-btn:hover {
   background-color: #0255b3;
@@ -205,7 +206,7 @@ async function runLiveApiQuery() {
   margin: 0;
   padding: 16px;
   background: #ffffff;
-  max-height: 400px;
+  max-height: 500px;
   overflow-y: auto;
   border-top: none;
 }
@@ -218,5 +219,6 @@ async function runLiveApiQuery() {
   display: block;
 }
 </style>
+
 
 ## API Reference Sheet from Open Access PokeAPI
