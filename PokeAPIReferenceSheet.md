@@ -24,7 +24,7 @@ title: api reference sheet from open access pokeapi
   </div>
 
   <div class="api-control-matrix">
-    <span class="api-url-base">https://pokeapi.co</span>
+    <span class="api-url-base">https://pokeapi.co/</span>
     <input type="text" id="api-query-parameter" placeholder="e.g., api/v2/pokemon/ditto, api/v2/type/3">
     <button id="api-execute-btn" onclick="runLiveApiQuery()">Send Request</button>
   </div>
@@ -67,23 +67,15 @@ async function runLiveApiQuery() {
     pathString = pathString.substring(1);
   }
 
-  const targetUri = "https://pokeapi.co" + pathString;
+  const targetUri = "https://pokeapi.co/" + pathString;
   telemetryUrl.textContent = targetUri;
   telemetryStatus.textContent = "PENDING...";
   telemetryStatus.style.color = "#cca700";
-
   jsonOutputBlock.textContent = "Streaming raw string payload data from destination host...";
   jsonOutputBlock.style.color = "#888888";
 
   try {
-    const apiResponse = await fetch(targetUri, {
-      method: 'GET',
-      mode: 'cors',
-      headers: { 
-        'Accept': 'application/json'
-      }
-    });
-
+    const apiResponse = await fetch(targetUri);
     telemetryStatus.textContent = apiResponse.status + " " + apiResponse.statusText;
 
     if (!apiResponse.ok) {
@@ -98,6 +90,8 @@ async function runLiveApiQuery() {
     jsonOutputBlock.style.color = "#24292e";
 
   } catch (caughtError) {
+    telemetryStatus.textContent = "FAILED";
+    telemetryStatus.style.color = "#ff4444";
     jsonOutputBlock.textContent = "{\n  \"error\": true,\n  \"message\": \"" + caughtError.message + "\",\n  \"context\": \"Verify spelling routes match the official PokéAPI syntax parameters.\"\n}";
     jsonOutputBlock.style.color = "#ff4444";
   }
