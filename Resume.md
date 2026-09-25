@@ -58,6 +58,8 @@ Dedicated and detail-oriented professional seeking a Technical Writer position t
 
 ## Professional Experience
 
+---
+
 ### Library Service and Technology Guide 2
 **Hillsborough County Public Library Cooperative** &nbsp;|&nbsp; *January 2025 – Present*
 * Diagnosed, isolated, and resolved complex hardware and software anomalies for end-users across diverse ecosystems, including integrated library databases, automated circulation systems, digital media platforms, and general office machinery.
