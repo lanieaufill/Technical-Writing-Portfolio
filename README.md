@@ -41,7 +41,7 @@ A highly visual, step-by-step instructional guide teaching beginners how to exec
 
 ## 🧠 Documentation Philosophy & Background
 
-My approach to technical writing is heavily informed by my background in **Philosophy and Logic**, where I specialized in breaking down abstract, dense logic frameworks into clear, structured arguments. Combined with my day-to-day experience handling live system troubleshooting and digital literacy training at the **Hillsborough County Public Library Cooperative**, I bridge the communication gap between engineers who build systems and the people who need to use them.
+My approach to technical writing is heavily informed by my background in **Philosophy and Logic**, where I specialized in breaking down abstract, dense logic frameworks into clear, structured arguments. Combined with my day-to-day experience handling live system troubleshooting and digital literacy training at the **Hillsborough County Public Library Cooperative**, my goal is to bridge the communication gap between engineers who build systems and the people who need to use them.
 
 ## 📫 Connect with Me
 *   **Email:** dalanieaufill@gmail.com
