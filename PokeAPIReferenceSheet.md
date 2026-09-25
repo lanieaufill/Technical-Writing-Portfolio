@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Poke API v2 Reference Sheet: An Open Access API
+title: Poke API v2 Reference Sheet - An Open Access API
 ---
 
 <style>
