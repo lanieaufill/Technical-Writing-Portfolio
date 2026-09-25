@@ -17,10 +17,25 @@ title: Poke API v2 Reference Sheet - An Open Access API
   }
   <style>
 
-  
+layout: home
+title: Poke API v2 Reference Sheet - An Open Access API
+---
+
+<style>
+  body { background-color: #C1E1C1 !important; }
+  .container-lg, .wrapper, main, .page-content {
+    background-color: #ffffff !important;
+    padding: 40px !important;
+    border-radius: 12px !important;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05) !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+</style>
+
 # Poke API v2 Reference Sheet: An Open Access API
 
-This reference guide provides developers with the structural parameters, data schemas, and URL path conventions needed to successfully query the global PokéAPI v2 database. Use these guidelines to format structural paths inside the live inspector console.
+This reference guide provides developers with the structural parameters, data schemas, and URL path conventions needed to successfully query the global PokéAPI v2 database.
 
 ## Request Architecture
 
@@ -31,58 +46,49 @@ This reference guide provides developers with the structural parameters, data sc
 ### Request Parameters
 
 #### Path Parameters
-Path parameters are append-only directories attached directly to the base origin URL to drill down into resource nodes. 
+Path parameters are append-only directories attached directly to the base origin URL to drill down into resource nodes.
 
-* **`api/v2/pokemon/{name_or_id}/`** *(string | integer, Required)*: Pulls structural creature data maps. String inputs must match canonical lowercase taxonomy definitions (e.g., `ditto`, `charizard`). Integer values look up the system database index (e.g., `132`, `6`).
-* **`api/v2/type/{name_or_id}/`** *(string | integer, Required)*: Exposes game engine element matrix mappings (e.g., `normal`, `fire`, `3`).
-* **`api/v2/ability/{name_or_id}/`** *(string | integer, Required)*: Isolates passive systemic rule modifiers assigned to creatures (e.g., `imposter`, `static`, `150`).
+* **`api/v2/pokemon/{name_or_id}/`** *(string/integer)*: Pulls structural creature profiles. Strings must be lowercase (e.g., `ditto`). Integers reference the index key (e.g., `132`).
+* **`api/v2/type/{name_or_id}/`** *(string/integer)*: Exposes elemental matrix balancing nodes (e.g., `fire` or `3`).
+* **`api/v2/ability/{name_or_id}/`** *(string/integer)*: Isolates passive combat rule modifiers (e.g., `static` or `9`).
 
 #### Query Parameters
-Query parameters allow client applications to control payload data volume. Appended after a `?` delimiter.
+Query parameters allow client applications to throttle page index sizing. Appended after a `?` delimiter shortcut.
 
-* **`limit`** *(integer, Optional)*: Dictates the maximum number of summary resource records returned per page (e.g., `?limit=20`).
-* **`offset`** *(integer, Optional)*: Specifies the starting database index offset threshold for bulk pagination (e.g., `?offset=20`).
+* **`limit`** *(integer)*: Dictates the maximum number of record summaries returned per transaction window. Default value is `20`.
+* **`offset`** *(integer)*: Specifies the starting index threshold array position for bulk page requests. Default value is `0`.
 
 #### Header Parameters
-* **`Accept`** *(string, Optional)*: Sent by client runtimes to request formal structural format compilation. Value: `application/json`.
+* **`Accept`**: `application/json`
 
 #### Request Body Payload
-* **`None`**: The `GET` method reads data parameters from the database layer exclusively. Request body structures are not supported and will be ignored by the remote router proxy.
+* **`None`**: The `GET` method reads target resource records directly from the cloud schema. Unbound body payloads are dropped.
 
 ---
 
 ## Schema Constraints
 
-Every resource mapping path outputs deeply nested JavaScript Object Notation payloads. Below are the structural rules governing top-level properties returned by successfully parsed route trees.
+Successful endpoint executions return complete structural JSON object maps.
 
-### Data Types
+### 1. Pokémon Node Schema (`api/v2/pokemon/`)
+* **`id`** *(integer, Non-Nullable)*: The official unique national database index key.
+* **`name`** *(string, Non-Nullable)*: The canonical lowercase lookup name of the creature.
+* **`height`** *(integer, Non-Nullable)*: Entity tracking height calculated in decimeters.
+* **`weight`** *(integer, Non-Nullable)*: Entity tracking mass calculated in hectograms.
+* **`sprites.front_default`** *(string, Nullable)*: Absolute web destination path routing link to the default sprite sheet graphic.
+* **`abilities`** *(array, Non-Nullable)*: Map array tracing trait properties, system slot settings, and hidden tags.
 
-#### 1. Pokémon Node Schema (`api/v2/pokemon/`)
-* **`id`** *(integer)*: The unique system identifier tracking this exact resource record.
-* **`name`** *(string)*: The lowercase canonical string representation of the target entity.
-* **`height`** *(integer)*: The physical height value of the entity tracked in decimeters.
-* **`weight`** *(integer)*: The physical mass value of the entity tracked in hectograms.
-* **`abilities`** *(array of objects)*: A structured index array mapping tracking behaviors:
-  * **`ability`** *(object)*: Details containing the sub-resource `name` and specific metadata root `url`.
-  * **`is_hidden`** *(boolean)*: True/False state switch isolating if the property is a hidden trait.
-  * **`slot`** *(integer)*: Numerical combat assignment positioning.
-* **`sprites`** *(object)*: An image link tracking table containing absolute asset URLs:
-  * **`front_default`** *(string | null)*: The primary fallback visual asset endpoint path string.
-* **`stats`** *(array of objects)*: A structural metrics collection array matching base battle points (`base_stat`) to global classification lookup names.
-* **`types`** *(array of objects)*: Relational connection list mapping elemental associations.
+### 2. Type Node Schema (`api/v2/type/`)
+* **`id`** *(integer)*: Database identifier for the specified element node.
+* **`name`** *(string)*: The unique lookup name tracking the element classification (e.g., `water`).
+* **`damage_relations`** *(object)*: Sub-arrays mapping systemic tracking lists like `double_damage_to` and `half_damage_to`.
+* **`pokemon`** *(array)*: Comprehensive lookup list matching every animal profile assigned to this type node.
 
-#### 2. Type Node Schema (`api/v2/type/`)
-* **`damage_relations`** *(object)*: Combat balancing data lists matching array sets like `double_damage_to` and `half_damage_to` to specific sub-resource array blocks.
-* **`pokemon`** *(array of objects)*: List containing every creature configuration schema mapped to this element node.
+### 3. Ability Node Schema (`api/v2/ability/`)
+* **`id`** *(integer)*: System transaction index for the target capability constraint.
+* **`name`** *(string)*: Structural lowercase label string for the passive trigger (e.g., `imposter`).
+* **`effect_entries`** *(array)*: Localization array containing string blocks detailing exact rule calculations.
 
-#### 3. Ability Node Schema (`api/v2/ability/`)
-* **`effect_entries`** *(array of objects)*: Contains sub-objects parsing multilingual translation tables. The `effect` property strings hold the technical rule logs explaining how the property modifies engine behavior.
-
-### Required vs. Optional Flags
-
-* **System Identity Keys:** Properties like `id`, `name`, and baseline layout arrays are **Strictly Required** and will always populate on valid 200 OK operations.
-* **Visual Media Assets:** Image path mappings inside the nested `sprites` block are **Optional / Nullable**. If a retro legacy index or a rare custom species map variant doesn't have an associated sprite sheet, the value outputs as `null`.
-* **Descriptions:** Localized linguistic arrays are **Optional**. Property lists filter depending on available community translation assets.
 
 
 <div class="api-explorer-root">
