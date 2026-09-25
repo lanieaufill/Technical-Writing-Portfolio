@@ -95,7 +95,7 @@ The network interface maps error logs to standard HTTP status codes. Review this
 
 * **`200 OK`** *(Success)*: The target path matches a valid resource, and the server returns the requested resource data.
 * **`404 Not Found`** *(Client Error)*: The requested path resource cannot be located. This occurs when an endpoint name or database ID does not correspond to an available resource.
-* **`Network Failure`**: The browser or client fails to establish or maintain the outbound connection before receiving an HTTP response. This may result from local nework conditions, browser extensions, privacy settings, or an invalid destination configuration.
+* **`Network Failure`**: The browser or client fails to establish or maintain the outbound connection before receiving an HTTP response. This may result from local network conditions, browser extensions, privacy settings, or an invalid destination configuration.
 
 ## Example Payload Manifests
 
