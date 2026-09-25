@@ -27,18 +27,19 @@ I love gaining new skills and working with complex topics, so the move to techni
 ## Projects 
 
   * [End-User Documentation on 3D Spacial Modeling and Engraving with TinkerCad](/tinkercad-documentation.md)
-  * Instruction Manual
   * [SOP](/SOP_Laptop_Updates.md)
   * [Installation Guide](/Instructions.md)
   * [API Reference Guide- Endpoint Documentation: `PokeAPI` ](/PokeAPIReferenceSheet.md) 
 
 ## Skills and Tools
- * Documentation: Markdown
- * Tools and Platforms:
- * Specialties: 
 
-## About Me
+* **Documentation Types:** Developer Documentation (DevDocs), Standard Operating Procedures (SOPs), End-User Tutorials, Hardware Configuration Guides, System Administration Playbooks, Technical Specifications, JSON Schema Mapping
+* **Tools and Platforms:** GitHub, GitHub Pages, Git Version Control, Jekyll static site generator, Cura LulzBot Edition (FDM/FFF 3D Slicing), Autodesk Tinkercad, Browser Developer Tools
+* **Specialties:** Docs-as-Code Workflow, Hardware-to-Software Onboarding, Procedural Network & Hardware Compliance, Interactive Documentation (Playgrounds/Sandboxes), Technical UI/UX Writing
+
 
 ## Connect With Me
 
 dalanieaufill@gmail.com
+
+813.585.9357
