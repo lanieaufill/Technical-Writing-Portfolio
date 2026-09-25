@@ -1,6 +1,6 @@
 ---
 layout: home
-title: api reference sheet from open access pokeapi
+title: Poke API v2 Reference Sheet: An Open Access API
 ---
 
 <style>
@@ -16,6 +16,10 @@ title: api reference sheet from open access pokeapi
     margin-bottom: 30px !important;
   }
 </style>
+
+## Poke API v2 Reference Sheet: An Open Access API
+
+
 
 <div class="api-explorer-root">
   <div class="api-explorer-header">
