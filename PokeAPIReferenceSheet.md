@@ -70,7 +70,7 @@ Query parameters allow client applications to throttle page index sizing. Append
 
 Successful endpoint executions return complete structural JSON object maps.
 
-### 1. Pokémon Node Schema (`api/v2/pokemon/`)
+###  Pokémon Node Schema (`api/v2/pokemon/`)
 * **`id`** *(integer, Non-Nullable)*: The official unique national database index key.
 * **`name`** *(string, Non-Nullable)*: The canonical lowercase lookup name of the creature.
 * **`height`** *(integer, Non-Nullable)*: Entity tracking height calculated in decimeters.
@@ -78,13 +78,13 @@ Successful endpoint executions return complete structural JSON object maps.
 * **`sprites.front_default`** *(string, Nullable)*: Absolute web destination path routing link to the default sprite sheet graphic.
 * **`abilities`** *(array, Non-Nullable)*: Map array tracing trait properties, system slot settings, and hidden tags.
 
-### 2. Type Node Schema (`api/v2/type/`)
+###  Type Node Schema (`api/v2/type/`)
 * **`id`** *(integer)*: Database identifier for the specified element node.
 * **`name`** *(string)*: The unique lookup name tracking the element classification (e.g., `water`).
 * **`damage_relations`** *(object)*: Sub-arrays mapping systemic tracking lists like `double_damage_to` and `half_damage_to`.
 * **`pokemon`** *(array)*: Comprehensive lookup list matching every animal profile assigned to this type node.
 
-### * Ability Node Schema (`api/v2/ability/`)
+###  Ability Node Schema (`api/v2/ability/`)
 * **`id`** *(integer)*: System transaction index for the target capability constraint.
 * **`name`** *(string)*: Structural lowercase label string for the passive trigger (e.g., `imposter`).
 * **`effect_entries`** *(array)*: Localization array containing string blocks detailing exact rule calculations.
@@ -99,7 +99,7 @@ The network interface maps error logs to standard HTTP status codes. Review this
 
 ## Example Payload Manifests
 
-### * Success Payload (HTTP 200 OK)
+###  Success Payload (HTTP 200 OK)
 When a valid path string (e.g., `api/v2/pokemon/ditto`) is successfully resolved, the server returns the fully initialized resource node dictionary:
 
 ```json
@@ -124,7 +124,7 @@ When a valid path string (e.g., `api/v2/pokemon/ditto`) is successfully resolved
 }
 ```
 
-### * Error Payload (HTTP 404 Not Found)
+###  Error Payload (HTTP 404 Not Found)
 When a client application submits a path parameter that fails formatting validation rules or does not match a database record, the catch block outputs a structured validation error signature:
 
 ```json
@@ -135,7 +135,7 @@ When a client application submits a path parameter that fails formatting validat
 }
 ```
 
-### * Type Node Schema (`api/v2/type/`)
+###  Type Node Schema (`api/v2/type/`)
 
 Successful executions targeting element nodes return deep structural relationship matrices mapping elemental data.
 
@@ -174,7 +174,7 @@ Successful executions targeting element nodes return deep structural relationshi
 
 ---
 
-### * Ability Node Schema (`api/v2/ability/`)
+###  Ability Node Schema (`api/v2/ability/`)
 
 Isolating a specific combat trait mapping reveals translation strings and historical rule descriptions.
 
