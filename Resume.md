@@ -64,7 +64,7 @@ Dedicated and detail-oriented professional seeking a Technical Writer position t
 **Hillsborough County Public Library Cooperative** &nbsp;|&nbsp; *January 2025 – Present*
 * Diagnosed, isolated, and resolved complex hardware and software anomalies for end-users across diverse ecosystems, including integrated library databases, automated circulation systems, digital media platforms, and general office machinery.
 * Conceptualized, developed, and delivered technical curriculum and step-by-step training content for public digital literacy programs; facilitated both group classroom training and high-touch, one-on-one technical coaching.
-* Managed and audited complex catalog databases (POLARIS), ensuring data integrity by updating records, ensure user satisfaction through settings customizations.
+* Managed and audited complex catalog databases (POLARIS), ensuring data integrity by updating records, and ensuring user satisfaction through settings customizations.
 * Evaluated collection health and hardware configurations, executing quality control protocols to ensure technical resources and physical displays adhered strictly to organizational compliance standards and preservation policies.
 * Assumed full building and operational in-charge responsibilities; monitored, trained, and assisted subordinate technical support staff while ensuring daily workflows maintained strict alignment with county policies and standard operating procedures (SOPs).
 
