@@ -84,10 +84,130 @@ Successful endpoint executions return complete structural JSON object maps.
 * **`damage_relations`** *(object)*: Sub-arrays mapping systemic tracking lists like `double_damage_to` and `half_damage_to`.
 * **`pokemon`** *(array)*: Comprehensive lookup list matching every animal profile assigned to this type node.
 
-### 3. Ability Node Schema (`api/v2/ability/`)
+### * Ability Node Schema (`api/v2/ability/`)
 * **`id`** *(integer)*: System transaction index for the target capability constraint.
 * **`name`** *(string)*: Structural lowercase label string for the passive trigger (e.g., `imposter`).
 * **`effect_entries`** *(array)*: Localization array containing string blocks detailing exact rule calculations.
+
+## HTTP Status & Error Codes
+
+The network interface maps error logs to standard HTTP status codes. Review this matrix when validating payload states:
+
+* **`200 OK`** *(Success)*: The target path string matches the server database configuration, and the request payload stream is open.
+* **`404 Not Found`** *(Client Error)*: The requested path parameter cannot be located. This occurs when an endpoint name or database ID number is spelled incorrectly or does not exist.
+* **`FAILED`** *(Network Interception)*: The browser network layer dropped the outbound connection before execution. This is typically triggered by local privacy extensions or an invalid destination domain configuration.
+
+## Example Payload Manifests
+
+### * Success Payload (HTTP 200 OK)
+When a valid path string (e.g., `api/v2/pokemon/ditto`) is successfully resolved, the server returns the fully initialized resource node dictionary:
+
+```json
+{
+  "id": 132,
+  "name": "ditto",
+  "height": 3,
+  "weight": 40,
+  "sprites": {
+    "front_default": "https://githubusercontent.com"
+  },
+  "abilities": [
+    {
+      "ability": {
+        "name": "limber",
+        "url": "https://pokeapi.co"
+      },
+      "is_hidden": false,
+      "slot": 1
+    }
+  ]
+}
+```
+
+### * Error Payload (HTTP 404 Not Found)
+When a client application submits a path parameter that fails formatting validation rules or does not match a database record, the catch block outputs a structured validation error signature:
+
+```json
+{
+  "error": true,
+  "message": "HTTP Network Error Status: 404 Not Found",
+  "context": "Verify spelling routes match the official PokéAPI syntax parameters."
+}
+```
+
+### * Type Node Schema (`api/v2/type/`)
+
+Successful executions targeting element nodes return deep structural relationship matrices mapping elemental data.
+
+#### Success Payload (HTTP 200 OK Example)
+```json
+{
+  "id": 3,
+  "name": "flying",
+  "damage_relations": {
+    "double_damage_from": [
+      { "name": "rock", "url": "https://pokeapi.co" },
+      { "name": "electric", "url": "https://pokeapi.co" }
+    ],
+    "double_damage_to": [
+      { "name": "fighting", "url": "https://pokeapi.co" },
+      { "name": "bug", "url": "https://pokeapi.co" }
+    ]
+  },
+  "pokemon": [
+    {
+      "pokemon": { "name": "charizard", "url": "https://pokeapi.co" },
+      "slot": 2
+    }
+  ]
+}
+```
+
+#### Error Payload (HTTP 404 Not Found Example)
+```json
+{
+  "error": true,
+  "message": "HTTP Network Error Status: 404 Not Found",
+  "context": "Verify spelling routes match the official PokéAPI syntax parameters."
+}
+```
+
+---
+
+### * Ability Node Schema (`api/v2/ability/`)
+
+Isolating a specific combat trait mapping reveals translation strings and historical rule descriptions.
+
+#### Success Payload (HTTP 200 OK Example)
+```json
+{
+  "id": 150,
+  "name": "imposter",
+  "effect_entries": [
+    {
+      "effect": "Transforms upon entering battle.",
+      "language": { "name": "en", "url": "https://pokeapi.co" }
+    }
+  ],
+  "pokemon": [
+    {
+      "is_hidden": true,
+      "pokemon": { "name": "ditto", "url": "https://pokeapi.co" },
+      "slot": 3
+    }
+  ]
+}
+```
+
+#### Error Payload (HTTP 404 Not Found Example)
+```json
+{
+  "error": true,
+  "message": "HTTP Network Error Status: 404 Not Found",
+  "context": "Verify spelling routes match the official PokéAPI syntax parameters."
+}
+```
+
 
 
 
