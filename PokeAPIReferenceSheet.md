@@ -219,7 +219,7 @@ Isolating a specific combat trait mapping reveals translation strings and histor
 
   <div class="api-control-matrix">
     <span class="api-url-base">https://pokeapi.co/api/v2/</span>
-    <input type="text" id="api-query-parameter" placeholder="e.g., api/v2/pokemon/ditto, api/v2/type/3">
+    <input type="text" id="api-query-parameter" placeholder="e.g., pokemon/ditto, type/3, ability/1">
     <button id="api-execute-btn" onclick="runLiveApiQuery()">Send Request</button>
   </div>
 
