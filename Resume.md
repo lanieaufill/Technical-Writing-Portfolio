@@ -54,6 +54,7 @@ title: Professional Resume - Dalanie Aufill
 
 Dedicated and detail-oriented professional seeking a Technical Writer position to translate complex technical architectures into highly accessible developer reference materials, end-user tutorials, and standard operating procedures (SOPs). Leverages a strong background in instructional design, database cataloging, and hardware troubleshooting to collaborate with engineering teams. A highly adaptable critical thinker committed to executing documentation-as-code workflows while driving team-wide project alignment.
 
+---
 
 ## Professional Experience
 
