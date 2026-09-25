@@ -19,7 +19,8 @@ title: Dalanie Aufill- Homepage
 
 
 ## Available Documents
-Check out my [About Me](/AboutMe.md)
+* Check out my [About Me](/AboutMe.md)
+* Check out my [Resume](/Resume.md)
 
 ## Portfolio Documents
 
