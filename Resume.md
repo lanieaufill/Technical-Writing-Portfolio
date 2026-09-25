@@ -44,10 +44,10 @@ title: Professional Resume - Dalanie Aufill
 
 <div class="resume-action-bar">
   <span>Review the embedded credentials below or download a local copy for your internal tracking systems.</span>
-  <a href="./resume.pdf" class="download-btn" download>Download PDF Copy</a>
+  <a href="./Aufill 9-24-2026.pdf" class="download-btn" download>Download PDF Copy</a>
 </div>
 
 <!-- Embedded browser container displays the PDF directly on the webpage surface -->
-<iframe src="./resume.pdf" class="pdf-viewer-frame">
+<iframe src="./Aufill 9-24-2026.pdf" class="pdf-viewer-frame">
   <p>Your browser configuration does not natively support embedded PDF files. Please click the button above to download and review the file directly.</p>
 </iframe>
