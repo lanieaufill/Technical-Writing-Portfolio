@@ -53,10 +53,10 @@ Path parameters are append-only directories attached directly to the base origin
 * **`api/v2/ability/{name_or_id}/`** *(string/integer)*: Isolates passive combat rule modifiers (e.g., `static` or `9`).
 
 #### Query Parameters
-Query parameters allow client applications to throttle page index sizing. Appended after a `?` delimiter shortcut.
+Query parameters allow client applications to control pagination for collection requests. Appended after a `?` delimiter shortcut.
 
 * **`limit`** *(integer)*: Dictates the maximum number of record summaries returned per transaction window. Default value is `20`.
-* **`offset`** *(integer)*: Specifies the starting index threshold array position for bulk page requests. Default value is `0`.
+* **`offset`** *(integer)*: Specifies the index position at which the returned record set begins. Default value is `0`.
 
 #### Header Parameters
 * **`Accept`**: `application/json`
@@ -89,13 +89,13 @@ Successful endpoint executions return complete structural JSON object maps.
 * **`name`** *(string)*: Structural lowercase label string for the passive trigger (e.g., `imposter`).
 * **`effect_entries`** *(array)*: Localization array containing string blocks detailing exact rule calculations.
 
-## HTTP Status & Error Codes
+## HTTP Status Codes & Network Error 
 
 The network interface maps error logs to standard HTTP status codes. Review this matrix when validating payload states:
 
-* **`200 OK`** *(Success)*: The target path string matches the server database configuration, and the request payload stream is open.
-* **`404 Not Found`** *(Client Error)*: The requested path parameter cannot be located. This occurs when an endpoint name or database ID number is spelled incorrectly or does not exist.
-* **`FAILED`** *(Network Interception)*: The browser network layer dropped the outbound connection before execution. This is typically triggered by local privacy extensions or an invalid destination domain configuration.
+* **`200 OK`** *(Success)*: The target path matches a valid resource, and the server returns the requested resource data.
+* **`404 Not Found`** *(Client Error)*: The requested path resource cannot be located. This occurs when an endpoint name or database ID does not correspond to an available resource.
+* **`Network Failure`**: The browser or client fails to establish or maintain the outbound connection before receiving an HTTP response. This may result from local nework conditions, browser extensions, privacy settings, or an invalid destination conficuration.
 
 ## Example Payload Manifests
 
