@@ -46,4 +46,4 @@ My approach to technical writing is heavily informed by my background in **Philo
 ## Connect with Me
 *   **Email:** dalanieaufill@gmail.com
 *   **Location:** Tampa, FL
-*   **Interactive Resume:** [View my Full Professional Credentials](https://lanieaufill.github.io/Technical-Writing-Portfolio/Resume.html)
+*   **Resume:** [View my Full Professional Credentials](https://lanieaufill.github.io/Technical-Writing-Portfolio/Resume.html)
