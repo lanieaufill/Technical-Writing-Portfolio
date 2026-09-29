@@ -49,6 +49,7 @@ This reference guide provides developers with the structural parameters, data sc
 Path parameters are append-only directories attached directly to the base origin URL to drill down into resource nodes.
 
 * **`api/v2/pokemon/{name_or_id}/`** *(string/integer)*: Pulls structural creature profiles. Strings must be lowercase (e.g., `ditto`). Integers reference the index key (e.g., `132`).
+  * Note: While the global database requires lowercase strings, this Inspector automatically sanitizes user input to support case-insensitive searches (e.g., "Ditto" or "DITTO" will resolve successfully).
 * **`api/v2/type/{name_or_id}/`** *(string/integer)*: Exposes elemental matrix balancing nodes (e.g., `fire` or `3`).
 * **`api/v2/ability/{name_or_id}/`** *(string/integer)*: Isolates passive combat rule modifiers (e.g., `static` or `9`).
 
