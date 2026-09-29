@@ -30,7 +30,7 @@ A clear, compliance-driven standard operating procedure designed for administrat
 
 ### 3. Installation Guide: 3D Printer Configuration via Cura LulzBot
 A hardware-to-software onboarding manual explaining how to add, calibrate, and upgrade 3D printer hardware profiles within sliced software ecosystems.
-*   **Highlights:** Solves unique administrative permission limits and breaks down exact X, Y, and Z axis calibrations.
+*   **Highlights:** Solves unique administrative permission limits and breaks down step by step update instructions.
 *   [Live Project Link](https://lanieaufill.github.io/Technical-Writing-Portfolio/Instructions.html)
 
 ### 4. End-User Tutorial: 3D Spatial Modeling & Recessed Text in Tinkercad
