@@ -33,9 +33,9 @@ I love gaining new skills and working with complex topics, so the move to techni
 
 ## Skills and Tools
 
-* **Documentation Types:** Developer Documentation (DevDocs), Standard Operating Procedures (SOPs), End-User Tutorials, Hardware Configuration Guides, System Administration Playbooks, Technical Specifications, JSON Schema Mapping
+* **Documentation Types:** Developer Documentation (DevDocs), Standard Operating Procedures (SOPs), End-User Tutorials, Hardware Configuration Guides, Technical Specifications, JSON Schema Mapping
 * **Tools and Platforms:** GitHub, GitHub Pages, Git Version Control, Jekyll static site generator, Cura LulzBot Edition (FDM/FFF 3D Slicing), Autodesk Tinkercad, Browser Developer Tools
-* **Specialties:** Docs-as-Code Workflow, Hardware-to-Software Onboarding, Procedural Network & Hardware Compliance, Interactive Documentation (Playgrounds/Sandboxes), Technical UI/UX Writing
+* **Specialties:** Docs-as-Code Workflow, Hardware-to-Software Documentation, Procedural Network & Hardware Compliance, Interactive Documentation (Playgrounds/Sandboxes), Technical UI/UX Writing
 
 
 ## Connect With Me
